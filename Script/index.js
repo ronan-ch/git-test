@@ -7,9 +7,9 @@ function max(buffer) {
         }
 
     }
-    return max
+    return {val:max,index:i}
 }
 
 
 var max1 = max([1,2,3,4,7,8]);
-console.log(max1)
+console.log(max1.val,max1.index)

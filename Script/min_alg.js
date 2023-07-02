@@ -7,8 +7,8 @@ function min(buffer) {
         }
 
     }
-    return min
+    return {val:min,index:i}
 }
 
 var min1 = min([1,2,3,4,7]);
-console.log(min1)
+console.log(min1.index,min1.val)
