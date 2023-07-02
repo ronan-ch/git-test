@@ -10,6 +10,6 @@ function max(buffer) {
     return max
 }
 
-console.log("this is a test file")
+
 var max1 = max([1,2,3,4,7]);
 console.log(max1)
