@@ -7,8 +7,10 @@ class Stack {
 
     push(element){
         let len = this.buffer.length
-        if(this.top>len){
+        if(this.top>len-1){
+            let tmpBuf = this.buffer
             this.buffer = new Array(2*len)
+            for(let i=0;i<tmpBuf.length;i++) this.buffer[i] = tmpBuf[i]
         }
         this.buffer[this.top] = element
         this.top++
@@ -22,6 +24,7 @@ class Stack {
 }
 
 var stack = new Stack(10);
-stack.push(1)
-stack.push(3)
+for(let k=0;k<10;k++)
+    stack.push(k)
+stack.push(11)
 console.log(stack.pop())
