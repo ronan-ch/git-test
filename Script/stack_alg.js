@@ -6,6 +6,10 @@ class Stack {
     }
 
     push(element){
+        let len = this.buffer.length
+        if(this.top>len){
+            this.buffer = new Array(2*len)
+        }
         this.buffer[this.top] = element
         this.top++
     }
