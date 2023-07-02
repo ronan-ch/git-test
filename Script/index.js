@@ -11,5 +11,5 @@ function max(buffer) {
 }
 
 
-var max1 = max([1,2,3,4,7]);
+var max1 = max([1,2,3,4,7,8]);
 console.log(max1)
