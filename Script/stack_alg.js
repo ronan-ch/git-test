@@ -24,7 +24,7 @@ class Stack {
 }
 
 var stack = new Stack(10);
-for(let k=0;k<10;k++)
+for(let k=0;k<=10;k++)
     stack.push(k)
 stack.push(11)
 console.log(stack.pop())
